@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SAMARTH <span>CALC</span></h1>
+        </header>
+
+        <div class="calculator-box">
+            <div class="display">
+                <div id="prev-action" class="previous-operand"></div>
+                <div id="current-action" class="current-operand">0</div>
+            </div>
+
+            <div class="buttons-grid">
+                <button class="btn-ctrl span-two" onclick="clearAll()">AC</button>
+                <button class="btn-ctrl" onclick="deleteLast()">DEL</button>
+                <button class="btn-op" onclick="setOp('÷')">÷</button>
+                
+                <button onclick="addNum('7')">7</button>
+                <button onclick="addNum('8')">8</button>
+                <button onclick="addNum('9')">9</button>
+                <button class="btn-op" onclick="setOp('×')">×</button>
+                
+                <button onclick="addNum('4')">4</button>
+                <button onclick="addNum('5')">5</button>
+                <button onclick="addNum('6')">6</button>
+                <button class="btn-op" onclick="setOp('-')">-</button>
+                
+                <button onclick="addNum('1')">1</button>
+                <button onclick="addNum('2')">2</button>
+                <button onclick="addNum('3')">3</button>
+                <button class="btn-op" onclick="setOp('+')">+</button>
+                
+                <button onclick="addNum('.')">.</button>
+                <button onclick="addNum('0')">0</button>
+                <button class="btn-equals span-two" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
